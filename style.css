@@ -162,6 +162,11 @@ a {
 	min-width: 800px;
 }
 
+.menu-lateral a img{
+	width: 1.5vw;
+    margin-right: 1vw;
+}
+
 .menu-lateral a:hover {
 	background: #e5e5e5;
 }
