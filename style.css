@@ -218,6 +218,26 @@ a {
 	width: 100%;
 }
 
+
+.main-container {
+    box-sizing: border-box;
+    background: #fff;
+    padding-left: 24vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.large-container {
+    padding-left: 7vw;
+}
+
+.portada-img img {
+    width: 100%;
+    height: 15vw;
+    border-radius: 1vw;
+}
+
 /* ---- ---- ---- Mediaqueries ---- ---- ---- */
 @media screen and (max-width: 1200px) {
 	.main .grid-videos {
