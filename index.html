@@ -9,48 +9,78 @@
 </head>
 <body>
 
-    <div class="contenedor active" id="contenedor">
-		<header class="header">
-			<div class="contenedor-logo">
-				<button id="boton-menu" class="boton-menu"><i class="fas fa-bars"></i></button>
-				<a href="#" class="logo"><i class="fas fa-play"></i> <span>Yoyube</span></a>
-			</div>
-            <div class="barra-busqueda">
-				<input type="text" placeholder="Buscar">
-				<button type="submit"><i class="fas fa-search"></i></button>
-			</div>
-            <div class="botones-header">
-				<button><i class="fas fa-upload"></i></button>
-				<button><i class="fas fa-th"></i></button>
-				<button><i class="fas fa-bell"></i></button>
-				<a href="#" class="avatar"><img src="images/CreativeCode.jpg" alt=""></a>
-			</div>
-		</header>
+	<header>
+    
+        <nav id="mynavBar" class="navbar">
+            
+            <div class="nav-left">
+                <div><img class="menu-icon" src="images/menu-hamburguesa.png" alt="menu"></div>
+                <img class="logo" src="images/YouTube_Logo_2017.svg" alt="logo">
+            </div>
+            
+            <div class="nav-middle">
+                <div style="display: flex;">
+                    <div class="search-box">
+                        <div class="block1">
+                            <input id="chartSearch" type="text" placeholder="Buscar">
+                        </div>
+                        <div class="block2">
+                            <img src="images/busqueda.png" alt="search">
+                        </div>
+                    </div>
+                    <img class="microphone" src="images/bxs-microphone.png" alt="microphone">
+                </div>
+            </div>
+            
+            <div class="nav-right">
+                <img src="images/video_icon_128530.png" alt="camera">
+                <img src="images/bell_icon_128467.png" alt="notifications">
+                <img class="user-icon" src="images/CreativeCode.jpg" alt="user" >
+            </div>
+        </nav>
+    </header>
+    
+    <div class="sidebar">
 
-        <nav class="menu-lateral">
-			<a href=""><img src="images/home_icon_128501.png" alt=""><p>Home</p></a>
-            <a href=""><img class="shorts" src="images/shorts.png" alt=""><p>Shorts</p></a>
-            <a href=""><img src="images/media-multimedia.png" alt=""><p>Suscriptores</p></a>
+		<div class="shortcuts">
+            <a href=""><img src="images/home_icon_128501.png">
+                <p>Home</p>
+            </a>
+            <a href=""><img class="shorts" src="images/shorts.png">
+                <p>Shorts</p>
+            </a>
+            <a href=""><img src="images/media-multimedia.png">
+                <p>Suscriptores</p>
+            </a>
             <hr>
-            <a href=""><img src="images/play_youtube_social_media.png" alt=""><p>Biblioteca</p></a>
-            <a href=""><img src="images/clocks.png" alt=""><p>Historial</p></a>
-            <a href=""><img src="images/playcircle_113957.png" alt=""><p>Tus videos</p></a>
-            <a href=""><img src="images/like_favorite.png" alt=""><p>Videos que me gustan</p></a>
-            <a href=""><img src="images/angulo-hacia-abajo.png" alt=""><p>Mostrar más</p></a>
-			<hr>
-		</nav>
-
-    </div>
-
-	<div class="main-container">
-        <div class="portada-img">
-            <img src="images/images.jpeg" alt="setapgammer">
+            <a href=""><img src="images/play_youtube_social_media.png">
+                <p>Biblioteca</p>
+            </a>
+            <a href=""><img src="images/clocks.png">
+                <p>Historial</p>
+            </a>
+            <a href=""><img src="images/playcircle_113957.png">
+                <p>Tus videos</p>
+            </a>
+            <a href=""><img src="images/like_favorite.png">
+                <p>Videos que me gustan</p>
+            </a>
+            <a href=""><img src="images/angulo-hacia-abajo.png">
+                <p>Mostrar más</p>
+            </a>
+            <hr>
         </div>
-       
+        
+    </div>
+        
+    <div class="main-container">
+        <div class="portada-img">
+            <img src="images/images.jpeg" alt="setupgammer">
+        </div>
+        
             <div id="myVideos" class="list-container">
             </div>
     </div>
 
-    
 </body>
 </html>
