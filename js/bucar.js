@@ -1,5 +1,5 @@
 export const SearchAll = async (p1)=> {
-    const peticion = await fetch("ChannelSearch.json");
+    const peticion = await fetch("canales.json");
     const json = await peticion.json ();
     let cont=0;
     let array = json.contents.map((value,id)=>{

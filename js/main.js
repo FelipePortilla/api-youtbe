@@ -16,7 +16,7 @@ menuIcon.addEventListener('click', () => {
 })
 
 
-fetch("json/jsonVideos.json", options)
+fetch("json/Videos.json", options)
     .then(res => res.json())
     .then(response => {
         let selecion = document.querySelector("#myVideos");
@@ -36,7 +36,7 @@ fetch("json/jsonVideos.json", options)
     })
     .catch(err => console.log(err));
 
-fetch("json/jsonVideos.json", options)
+fetch("json/Videos.json", options)
 	.then(res => res.json())
 	.then(response => {
 		let selecion = document.querySelector("#myPageplay");
@@ -67,7 +67,7 @@ if (videoId) {
 	const videoContainer = document.querySelector("#play-video-final");
 	
 		
-	fetch("json/jsonVideos.json")
+	fetch("json/Videos.json")
 		.then(res => res.json())
 		.then(response => {
 			const video = response.contents.find(video => video.video.videoId === videoId);

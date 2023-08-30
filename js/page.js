@@ -1,5 +1,5 @@
 
-import { SearchAll } from "./getAll.js";
+import { SearchAll } from "./bucar.js";
 document.querySelector("#chartSearch").addEventListener("input",(e)=>{//We can use input or change
     SearchAll(e.target.value);
 });
