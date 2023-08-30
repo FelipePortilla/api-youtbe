@@ -1,3 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+img {
+    cursor: pointer;
+}
+
+/* ---------------NAVBAR CLASES -----------------*/
 
 header {
     min-height: fit-content;
@@ -45,7 +67,7 @@ header {
 
 .nav-left .logo {
     margin-left: 3vw;
-    height: 1.7vw;
+    height: 6vw;
 }
 
 .nav-middle {
