@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/bucar.js" type="module" defer></script>
+    <script src="./js/page.js" type="module" defer></script>
+    <script src="./js/main.js" type="module" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <title>Youtube</title>
+</head>
+<body>
+
+    <div class="contenedor active" id="contenedor">
+		<header class="header">
+			<div class="contenedor-logo">
+				<button id="boton-menu" class="boton-menu"><i class="fas fa-bars"></i></button>
+				<a href="#" class="logo"><i class="fas fa-play"></i> <span>Yoyube</span></a>
+			</div>
+            <div class="barra-busqueda">
+				<input type="text" placeholder="Buscar">
+				<button type="submit"><i class="fas fa-search"></i></button>
+			</div>
+            <div class="botones-header">
+				<button><i class="fas fa-upload"></i></button>
+				<button><i class="fas fa-th"></i></button>
+				<button><i class="fas fa-bell"></i></button>
+				<a href="#" class="avatar"><img src="images/CreativeCode.jpg" alt=""></a>
+			</div>
+		</header>
+
+        <nav class="menu-lateral">
+			<a href=""><img src="images/home_icon_128501.png" alt=""><p>Home</p></a>
+            <a href=""><img class="shorts" src="images/shorts.png" alt=""><p>Shorts</p></a>
+            <a href=""><img src="images/media-multimedia.png" alt=""><p>Suscriptores</p></a>
+            <hr>
+            <a href=""><img src="images/play_youtube_social_media.png" alt=""><p>Biblioteca</p></a>
+            <a href=""><img src="images/clocks.png" alt=""><p>Historial</p></a>
+            <a href=""><img src="images/playcircle_113957.png" alt=""><p>Tus videos</p></a>
+            <a href=""><img src="images/like_favorite.png" alt=""><p>Videos que me gustan</p></a>
+            <a href=""><img src="images/angulo-hacia-abajo.png" alt=""><p>Mostrar más</p></a>
+			<hr>
+		</nav>
+
+    </div>
+
+	<div class="main-container">
+        <div class="portada-img">
+            <img src="images/images.jpeg" alt="setapgammer">
+        </div>
+       
+            <div id="myVideos" class="list-container">
+            </div>
+    </div>
+
+    
+</body>
+</html>
