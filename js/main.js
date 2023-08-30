@@ -35,3 +35,22 @@ fetch("json/jsonVideos.json", options)
         `);
     })
     .catch(err => console.log(err));
+
+fetch("json/jsonVideos.json", options)
+	.then(res => res.json())
+	.then(response => {
+		let selecion = document.querySelector("#myPageplay");
+		selecion.insertAdjacentHTML("beforeend", /*html*/`
+			${response.contents.map((video) => /*html*/`
+			<div class="side-video" >
+				<a href="index-playvideo.html?videoId=${video.video.videoId}" class="small-img-sidebar"><img src="${video.video.thumbnails[video.video.thumbnails.length - 1].url}" alt=""></a>
+				<div class="video-side-info">
+					<a href="index-playvideo.html?videoId=${video.video.videoId}" class="name-other-video">${video.video.title}</a>
+					<p class="name-chanel-sidebar">CreativeCode</p>
+					<p class="info-views">${video.video.stats.views} views &bull; ${video.video.publishedTimeText}</p>
+				</div>
+			</div>
+			`).join(" ")}
+		`);
+	})
+	.catch(err => console.log(err));
